@@ -11,8 +11,8 @@ from urllib.parse import urlparse
 
 import mlflow
 
-os.environ['MLFLOW_TRACKING_URI']="https://dagshub.com/krishnaik06/machinelearningpipeline.mlflow"
-os.environ['MLFLOW_TRACKING_USERNAME']="krishnaik06"
+os.environ['MLFLOW_TRACKING_URI']="https://dagshub.com/venkat-nallapu09/machinelearningpipeline.mlflow"
+os.environ['MLFLOW_TRACKING_USERNAME']="venkat-nallapu09"
 os.environ["MLFLOW_TRACKING_PASSWORD"]="7104284f1bb44ece0e2adb4e36a250ae3251f"
 
 def hyperparameter_tuning(X_train,y_train,param_grid):
@@ -30,7 +30,7 @@ def train(data_path,model_path,random_state,n_estimators,max_depth):
     X=data.drop(columns=["Outcome"])
     y=data['Outcome']
 
-    mlflow.set_tracking_uri("https://dagshub.com/krishnaik06/machinelearningpipeline.mlflow")
+    mlflow.set_tracking_uri("https://dagshub.com/venkat-nallapu09/machinelearningpipeline.mlflow")
 
 
     ## start the MLFLOW run
@@ -92,6 +92,7 @@ def train(data_path,model_path,random_state,n_estimators,max_depth):
 
 if __name__=="__main__":
     train(params['data'],params['model'],params['random_state'],params['n_estimators'],params['max_depth'])
+
 
 
 
