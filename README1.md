@@ -528,7 +528,3 @@ dvc stage add -n evaluate \
 - Onboard new team members with confidence—every step is documented, tracked, and automated.
 
 ---
-
-## ❤️ Contributions
-
-Feel free to fork, adapt, and contribute to this pipeline for your own projects or research!
